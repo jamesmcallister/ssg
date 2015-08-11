@@ -1,3 +1,5 @@
+@import './base.css';
+
 .logo-container{
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +7,13 @@
 
 
 .logo-item{
-  flex: 1 1 25%;
-  
-}
+  flex: 1 1 auto;
+  }
+ .logo-item img{
+  max-height: 10rem;
+  max-width: 10rem;
+  min-height: 6rem;
+  min-width: 6rem;
+ }
+ 
+ 

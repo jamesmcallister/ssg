@@ -61,8 +61,8 @@
   },
   "scripts": {
     "imagemin": "imagemin src/images/* images -3",
-    "css": "cssnext src/base.css css/ssg.css",
-    "minify:css": "cssnext -c src/base.css css/ssg.min.css",
+    "css": "cssnext src/styles.css css/styles.css",
+    "minify:css": "cssnext -c src/styles.css css/styles.min.css",
     "watch:css": "watch 'npm run css && npm run minify:css' ./src",
     "serve": "browser-sync start --files 'css/*.css, *.html' --server",
     "start": "npm run watch:css & npm run serve"

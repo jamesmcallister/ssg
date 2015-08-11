@@ -1174,29 +1174,7 @@ code {
 
 
 /* Add  your custom styles in the follow file */
-.logo-container{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  }
-
-
-.logo-item{
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  }
- .logo-item img{
-  max-height: 160px;
-  max-height: 10rem;
-  max-width: 160px;
-  max-width: 10rem;
- }
+/*@import './styles.css';*/
 
 
 
@@ -1287,3 +1265,33 @@ code {
 
 }
 */
+
+.logo-container{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  }
+
+
+.logo-item{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  }
+ .logo-item img{
+  max-height: 160px;
+  max-height: 10rem;
+  max-width: 160px;
+  max-width: 10rem;
+  min-height: 96px;
+  min-height: 6rem;
+  min-width: 96px;
+  min-width: 6rem;
+ }
+ 
+ 
