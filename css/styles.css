@@ -1266,6 +1266,14 @@ code {
 }
 */
 
+    .logo-ellipse{
+      /*display: none;*/
+      fill: red;
+    }
+    .logo-color{
+     color: white;
+     }
+
 .logo-container{
   display: -webkit-box;
   display: -webkit-flex;
