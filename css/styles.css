@@ -1075,4 +1075,22 @@ hr {
 .vg-green {
   color: #009245;
   color: rgba(0, 146, 69, 1.0);
+  fill: rgba(0, 146, 69, 1.0);
+}
+
+/* filters */
+un-blur {
+-webkit-filter: none;
+        filter: none;
+}
+
+.blur {
+filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+-webkit-filter: blur(4px);
+        filter: blur(4px);
+}
+.sepia {
+filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.7572 0.30760000000000004 0.0756 0 0 0.1396 0.8744000000000001 0.06720000000000001 0 0 0.10880000000000001 0.2136 0.6524 0 0 0 0 0 1 0" /></filter></svg>#filter');
+-webkit-filter: sepia(.4);
+        filter: sepia(.4);
 }
