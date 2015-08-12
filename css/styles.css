@@ -8,11 +8,8 @@
  *
  */
 
-
 /* Basscss Modules */
-body { margin: 0 }
-img { max-width: 100% }
-svg { max-height: 100% }
+/*@import 'basscss-base-reset';*/
 /* Basscss Base Forms */
 
 input,
@@ -116,16 +113,19 @@ td {
 
 th { vertical-align: bottom }
 td { vertical-align: top }
+
+
+/* Basscss Defaults */
 /* Basscss Base Typography */
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: avenir, 'avenir next', helvetica, 'helvetica neue', arial, sans-serif;
   line-height: 1.5;
   font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: avenir, 'avenir next', helvetica, 'helvetica neue', arial, sans-serif;
   font-weight: bold;
   line-height: 1.25;
   margin-top: 1em;
@@ -162,6 +162,8 @@ h3 { font-size: 20px; font-size: 1.25rem }
 h4 { font-size: 16px; font-size: 1rem }
 h5 { font-size: 14px; font-size: .875rem }
 h6 { font-size: 12px; font-size: .75rem }
+
+/* Basscss Defaults */
 /* Basscss Color Base */
 
 body {
@@ -179,7 +181,7 @@ a:hover {
 }
 
 pre, code {
-  background-color: transparent;
+  background-color: #ddd;
   border-radius: 3px;
 }
 
@@ -189,6 +191,8 @@ hr {
   border-bottom-width: 1px;
   border-bottom-color: rgba(0,0,0,.125);
 }
+
+/* Basscss Defaults */
 /* Basscss Color Forms */
 
 .field {
@@ -249,6 +253,9 @@ hr {
 .field.is-error.is-focused {
   box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
 }
+
+
+/* Basscss Defaults */
 /* Basscss Color Tables */
 
 .table-light th,
@@ -261,12 +268,13 @@ hr {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
+
+/* Basscss Defaults */
 /* Basscss Btn */
 
 .btn {
   font-family: inherit;
   font-size: inherit;
-  font-weight: bold;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
@@ -299,6 +307,8 @@ hr {
   border: 0;
   padding: 0;
 }
+
+/* Basscss Defaults */
 /* Basscss Btn Primary */
 
 .btn-primary {
@@ -354,6 +364,8 @@ hr {
 .h4 { font-size: 16px; font-size: 1rem }
 .h5 { font-size: 14px; font-size: .875rem }
 .h6 { font-size: 12px; font-size: .75rem }
+
+/* Basscss Defaults */
 /* Basscss Utility Typography */
 
 .bold    { font-weight: bold; font-weight: bold }
@@ -466,6 +478,8 @@ hr {
 .p4  { padding: 64px; padding: 4rem }
 .py4 { padding-top: 64px; padding-top: 4rem; padding-bottom: 64px; padding-bottom: 4rem }
 .px4 { padding-left: 64px; padding-left: 4rem; padding-right: 64px; padding-right: 4rem }
+
+/* Basscss Defaults */
 /* Basscss Positions */
 
 .relative { position: relative }
@@ -521,6 +535,9 @@ hr {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+
+/* Basscss Defaults */
 /* Basscss Grid */
 
 .container {
@@ -768,6 +785,8 @@ hr {
   }
 
 }
+
+/* Basscss Defaults */
 /* Flex Object */
 
 .flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
@@ -809,6 +828,9 @@ hr {
 @media (min-width: 64em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 }
+
+
+/* Basscss Defaults */
 /* Basscss Color Borders */
 
 .border {
@@ -853,6 +875,8 @@ hr {
 .rounded-left   { border-radius: 3px 0 0 3px }
 
 .not-rounded { border-radius: 0 }
+
+/* Basscss Defaults */
 /* Basscss Colors */
 
 .black  { color: #111 }
@@ -877,6 +901,8 @@ hr {
 
 .color-inherit { color: inherit }
 .muted { opacity: .5 }
+
+/* Basscss Defaults */
 /* Basscss Background Colors */
 
 .bg-black  { background-color: #111 }
@@ -909,370 +935,115 @@ hr {
 .bg-lighten-3 { background-color: #FFFFFF; background-color: rgba(255,255,255,.25) }
 .bg-lighten-4 { background-color: #FFFFFF; background-color: rgba(255,255,255,.5) }
 
-/*
-
-   Font Family Groups
-
-*/
-
-body,
-.sans-serif {
-  font-family: avenir, 'avenir next', helvetica, 'helvetica neue', arial, sans-serif;
-}
-
-.serif {
-  font-family: "Calisto MT", georgia, serif;
-}
-
-// From http://cssfontstack.com
-.code,
-code {
-  font-family: Consolas, monaco, monospace;
-}
-
-.serif-bodini {
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
-
-.serif-calisto {
-  font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
-}
-
-.serif-garamond {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-}
-
-.serif-times {
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-}
-/*
-
-   Font Style
-
-*/
-
-.fsn {
-  font-style: normal;
-}
-
-.i {
-  font-style: italic;
-}
-/* ==========================================================================
-   TYPE SCALE
-   ========================================================================== */
-
-.mega {
-  font-size: 64px;
-  font-size: 4rem;
-}
-
-.f1 {
-  font-size: 32px;
-  font-size: 2rem;
-}
-
-.f2 {
-  font-size: 24px;
-  font-size: 1.5rem;
-}
-
-.f3 {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-.f4 {
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-.f5,
-.small {
-  font-size: 13px;
-  font-size: .85rem;
-}
-
-@media screen and (max-width: 48em) {
-  .mega-ns {
-    font-size: 4rem;
-  }
-
-  .f1-ns {
-    font-size: 2rem;
-  }
-
-  .f2-ns {
-    font-size: 1.5rem;
-  }
-
-  .f3-ns {
-    font-size: 1.25em;
-  }
-
-  .f4-ns {
-    font-size: 1.25rem;
-  }
-
-  .f5-ns {
-    font-size: 1rem;
-  }
-
-  .f6-ns {
-    font-size: .85rem;
-  }
-}
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .mega-m {
-    font-size: 4rem;
-  }
-
-  .f1-m {
-    font-size: 2rem;
-  }
-
-  .f2-m {
-    font-size: 1.5rem;
-  }
-
-  .f3-m {
-    font-size: 1.25rem;
-  }
-
-  .f4-m {
-    font-size: 1rem;
-  }
-
-  .f5-m {
-    font-size: .85rem;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .mega-l {
-    font-size: 4rem;
-  }
-
-  .f1-l {
-    font-size: 2rem;
-  }
-
-  .f2-l {
-    font-size: 1.5rem;
-  }
-
-  .f3-l {
-    font-size: 1.25rem;
-  }
-
-  .f4-l {
-    font-size: 1rem;
-  }
-
-  .f5-l {
-    font-size: .85rem;
-  }
-}
-/*
-
-   FONT WEIGHT
-
-*/
-
-.fwn {
-  font-weight: normal;
-}
-
-.b {
-  font-weight: bold;
-}
-
-.fw1 {
-  font-weight: 100;
-}
-
-.fw4 {
-  font-weight: 400;
-}
-
-.fw9 {
-  font-weight: 900;
-}
-
-@media screen and (min-width: 48em) {
-  .fwn-ns {
-    font-weight: normal;
-  }
-
-  .b-ns {
-    font-weight: bold;
-  }
-
-  .fw1-ns {
-    font-weight: 100;
-  }
-
-  .fw4-ns {
-    font-weight: 400;
-  }
-
-  .fw9-ns {
-    font-weight: 900;
-  }
-}
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .fwn-m {
-    font-weight: normal;
-  }
-
-  .b-m {
-    font-weight: bold;
-  }
-
-  .fw1-m {
-    font-weight: 100;
-  }
-
-  .fw4-m {
-    font-weight: 400;
-  }
-
-  .fw9-m {
-    font-weight: 900;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .fwn-l {
-    font-weight: normal;
-  }
-
-  .b-l {
-    font-weight: bold;
-  }
-
-  .fw1-l {
-    font-weight: 100;
-  }
-
-  .fw4-l {
-    font-weight: 400;
-  }
-
-  .fw9-l {
-    font-weight: 900;
-  }
-}
-
+/* Basscss Defaults */
 
 /* Example custom file import */
 /*
 @import './color/borders';
 */
 
-
-/* Add  your custom styles in the follow file */
-/*@import './styles.css';*/
-
-
-
 /* Default custom properties */
 
 
 /* Custom media queries */
+
 /*
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 64em);
+
+   TYPE SCALE
+
 */
 
+.mega  { font-size: 64px; font-size: 4rem; }
+.f1    { font-size: 32px; font-size: 2rem; }
+.f2    { font-size: 24px; font-size: 1.5rem; }
+.f3    { font-size: 20px; font-size: 1.25rem; }
+.f4    { font-size: 16px; font-size: 1rem; }
+.f5,
+.small { font-size: 13px; font-size: .85rem; }
+
+@media (min-width: 40em){
+ .mega-ns { font-size: 4rem; }
+ .f1-ns {   font-size: 2rem; }
+ .f2-ns {   font-size: 1.5rem; }
+ .f3-ns {   font-size: 1.25em; }
+ .f4-ns {   font-size: 1rem; }
+ .f5-ns {   font-size: .85rem; }
+}
+
+
+@media (min-width: 52em) {
+ .mega-m { font-size: 4rem; }
+ .f1-m {   font-size: 2rem; }
+ .f2-m {   font-size: 1.5rem; }
+ .f3-m {   font-size: 1.25rem; }
+ .f4-m {   font-size: 1rem; }
+ .f5-m {   font-size: .85rem; }
+}
+
+@media (min-width: 64em) {
+ .mega-l { font-size: 4rem; }
+ .f1-l   { font-size: 2rem; }
+ .f2-l   { font-size: 1.5rem; }
+ .f3-l   { font-size: 1.25rem; }
+ .f4-l   { font-size: 1rem; }
+ .f5-l   { font-size: .85rem; }
+}
 
 /* Custom properties */
+
+
 /*
-:root {
 
-  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  --line-height: 1.5;
-  --heading-font-family: var(--font-family);
-  --heading-font-weight: bold;
-  --heading-line-height: 1.25;
-  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+   TYPOGRAPHY from tachyons
 
-  --h1: 2rem;
-  --h2: 1.5rem;
-  --h3: 1.25rem;
-  --h4: 1rem;
-  --h5: .875rem;
-  --h6: .75rem;
-
-  --bold-font-weight: bold;
-
-  --space-1: .5rem;
-  --space-2: 1rem;
-  --space-3: 2rem;
-  --space-4: 4rem;
-
-  --form-field-font-size: 1rem;
-  --form-field-height: 2.25rem;
-  --form-field-padding-y: .5rem;
-  --form-field-padding-x: .5rem;
-
-  --button-font-size: inherit;
-  --button-font-weight: bold;
-  --button-line-height: 1.125rem;
-  --button-padding-y: .5rem;
-  --button-padding-x: 1rem;
-
-  --container-width: 64em;
-
-  --black:  #111;
-  --gray:   #aaa;
-  --silver: #ddd;
-  --white:  #fff;
-
-  --aqua:   #7fdbff;
-  --blue:   #0074d9;
-  --navy:   #001f3f;
-  --teal:   #39cccc;
-  --green:  #2ecc40;
-  --olive:  #3d9970;
-  --lime:   #01ff70;
-
-  --yellow: #ffdc00;
-  --orange: #ff851b;
-  --red:    #ff4136;
-  --fuchsia:#f012be;
-  --purple: #b10dc9;
-  --maroon: #85144b;
-
-
-  --darken-1: rgba(0,0,0,.0625);
-  --darken-2: rgba(0,0,0,.125);
-  --darken-3: rgba(0,0,0,.25);
-  --darken-4: rgba(0,0,0,.5);
-
-  --border-width: 1px;
-  --border-radius: 3px;
-  --border-color: var(--darken-2);
-  --hover-background-color: var(--darken-1);
-
-  --link-color: var(--blue);
-  --button-background-color: var(--blue);
-  --pre-background-color: var(--silver);
-
-
-}
 */
 
-    .logo-ellipse{
-      /*display: none;*/
-      fill: red;
-    }
-    .logo-color{
-     color: white;
-     }
+.measure  {
+  max-width: 30em;
+}
+
+.indent   {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 40em){
+  .measure-ns  {
+    max-width: 30em;
+  }
+  .indent-ns   {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 52em) {
+  .measure-m  { max-width: 30em; }
+  .indent-m  {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .measure-l  { max-width: 30em; }
+  .indent-l  {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.logo-ellipse{
+  /*display: none;*/
+  fill: rgba(0, 146, 69, 1.0);
+}
+.logo-color{
+ color: white;
+ }
 
 .logo-container{
   display: -webkit-box;
@@ -1283,7 +1054,6 @@ code {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   }
-
 
 .logo-item{
   -webkit-box-flex: 1;
@@ -1301,5 +1071,8 @@ code {
   min-width: 96px;
   min-width: 6rem;
  }
- 
- 
+
+.vg-green {
+  color: #009245;
+  color: rgba(0, 146, 69, 1.0);
+}

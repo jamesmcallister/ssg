@@ -45,13 +45,14 @@
     "basscss-utility-layout": "^2.0.3",
     "basscss-utility-typography": "^2.0.0",
     "basscss-white-space": "^1.1.2",
-    "flex-object": "^2.0.2",
-    "colors.css": "^2.3.0",
+    "flex-object": "^2.0.2"
+    
+  },
+    "_comments": {   
     "tachyons-font-family": "^1.0.2",
     "tachyons-font-style": "^1.0.2",
     "tachyons-type-scale": "^1.0.2",
     "tachyons-font-weight": "^2.0.0"
-
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
@@ -63,7 +64,8 @@
     "imagemin": "imagemin src/images/* images -3",
     "css": "cssnext src/styles.css css/styles.css",
     "minify:css": "cssnext -c src/styles.css css/styles.min.css",
-    "watch:css": "watch 'npm run css && npm run minify:css' ./src",
+    "orgwatch:css": "watch 'npm run css && npm run minify:css' ./src",
+    "watch:css": "watch 'npm run css' ./src",
     "serve": "browser-sync start --files 'css/*.css, *.html' --server",
     "start": "npm run watch:css & npm run serve"
   },

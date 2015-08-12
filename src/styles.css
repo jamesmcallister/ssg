@@ -1,18 +1,17 @@
 @import './base.css';
 
-    .logo-ellipse{
-      /*display: none;*/
-      fill: red;
-    }
-    .logo-color{
-     color: white;
-     }
+.logo-ellipse{
+  /*display: none;*/
+  fill: var(--vg-green);
+}
+.logo-color{
+ color: white;
+ }
 
 .logo-container{
   display: flex;
   flex-wrap: wrap;
   }
-
 
 .logo-item{
   flex: 1 1 auto;
@@ -24,4 +23,10 @@
   min-width: 6rem;
  }
  
- 
+ :root {
+  --vg-green: rgba(0, 146, 69, 1.0);
+}
+
+.vg-green {
+  color: var(--vg-green);
+}
