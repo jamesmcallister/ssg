@@ -1,7 +1,7 @@
 {
   "name": "simple-style-guide",
   "version": "0.0.1",
-  "description": "Style Guide bassed on basscss and tachyons. With Brower-sync, imagemin",
+  "description": "Style Guide bassed on basscss and tachyons. With Brower-sync, imagemin and cssnext",
   "main": "index.html",
   "dependencies": {
     "basscss-align": "^1.0.0",
@@ -46,13 +46,6 @@
     "basscss-utility-typography": "^2.0.0",
     "basscss-white-space": "^1.1.2",
     "flex-object": "^2.0.2"
-    
-  },
-    "_comments": {   
-    "tachyons-font-family": "^1.0.2",
-    "tachyons-font-style": "^1.0.2",
-    "tachyons-type-scale": "^1.0.2",
-    "tachyons-font-weight": "^2.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.8.2",
