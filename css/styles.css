@@ -113,9 +113,6 @@ td {
 
 th { vertical-align: bottom }
 td { vertical-align: top }
-
-
-/* Basscss Defaults */
 /* Basscss Base Typography */
 
 body {
@@ -162,8 +159,6 @@ h3 { font-size: 20px; font-size: 1.25rem }
 h4 { font-size: 16px; font-size: 1rem }
 h5 { font-size: 14px; font-size: .875rem }
 h6 { font-size: 12px; font-size: .75rem }
-
-/* Basscss Defaults */
 /* Basscss Color Base */
 
 body {
@@ -191,8 +186,6 @@ hr {
   border-bottom-width: 1px;
   border-bottom-color: rgba(0,0,0,.125);
 }
-
-/* Basscss Defaults */
 /* Basscss Color Forms */
 
 .field {
@@ -253,9 +246,6 @@ hr {
 .field.is-error.is-focused {
   box-shadow: 0 0 0 2px rgba(255, 65, 54, 0.5);
 }
-
-
-/* Basscss Defaults */
 /* Basscss Color Tables */
 
 .table-light th,
@@ -268,8 +258,6 @@ hr {
 .table-light tr:last-child td {
   border-bottom: 0;
 }
-
-/* Basscss Defaults */
 /* Basscss Btn */
 
 .btn {
@@ -307,8 +295,6 @@ hr {
   border: 0;
   padding: 0;
 }
-
-/* Basscss Defaults */
 /* Basscss Btn Primary */
 
 .btn-primary {
@@ -364,8 +350,6 @@ hr {
 .h4 { font-size: 16px; font-size: 1rem }
 .h5 { font-size: 14px; font-size: .875rem }
 .h6 { font-size: 12px; font-size: .75rem }
-
-/* Basscss Defaults */
 /* Basscss Utility Typography */
 
 .bold    { font-weight: bold; font-weight: bold }
@@ -478,8 +462,6 @@ hr {
 .p4  { padding: 64px; padding: 4rem }
 .py4 { padding-top: 64px; padding-top: 4rem; padding-bottom: 64px; padding-bottom: 4rem }
 .px4 { padding-left: 64px; padding-left: 4rem; padding-right: 64px; padding-right: 4rem }
-
-/* Basscss Defaults */
 /* Basscss Positions */
 
 .relative { position: relative }
@@ -535,9 +517,6 @@ hr {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-
-
-/* Basscss Defaults */
 /* Basscss Grid */
 
 .container {
@@ -785,8 +764,6 @@ hr {
   }
 
 }
-
-/* Basscss Defaults */
 /* Flex Object */
 
 .flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
@@ -828,9 +805,6 @@ hr {
 @media (min-width: 64em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 }
-
-
-/* Basscss Defaults */
 /* Basscss Color Borders */
 
 .border {
@@ -875,8 +849,6 @@ hr {
 .rounded-left   { border-radius: 3px 0 0 3px }
 
 .not-rounded { border-radius: 0 }
-
-/* Basscss Defaults */
 /* Basscss Colors */
 
 .black  { color: #111 }
@@ -901,8 +873,6 @@ hr {
 
 .color-inherit { color: inherit }
 .muted { opacity: .5 }
-
-/* Basscss Defaults */
 /* Basscss Background Colors */
 
 .bg-black  { background-color: #111 }
@@ -934,8 +904,6 @@ hr {
 .bg-lighten-2 { background-color: #FFFFFF; background-color: rgba(255,255,255,.125) }
 .bg-lighten-3 { background-color: #FFFFFF; background-color: rgba(255,255,255,.25) }
 .bg-lighten-4 { background-color: #FFFFFF; background-color: rgba(255,255,255,.5) }
-
-/* Basscss Defaults */
 
 /* Example custom file import */
 /*
